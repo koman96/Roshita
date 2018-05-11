@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="10dp"
+    android:background="@drawable/order_background"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="صيـدلية :"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/pharmNameTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="إسـم الصـيـدليـة"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="السـعر :"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/medPriceTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="الـسـعـر"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

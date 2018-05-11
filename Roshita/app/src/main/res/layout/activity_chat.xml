@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.roshita.ChatActivity"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/chatTollbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/brown">
+
+            <TextView
+                android:id="@+id/receiverEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="receiver email"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_gravity="center" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chatList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/brown"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/sendIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/send_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:id="@+id/messageEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="أكتب هـنا"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="5dp"
+            android:inputType="text"
+            android:ems="8"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/add_photo"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/prog_bar"
+        android:visibility="invisible"/>
+</RelativeLayout>

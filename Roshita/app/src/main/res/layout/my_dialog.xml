@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_inbox_shape"
+    android:padding="30dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/brown"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/yesDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نعم"
+            android:background="@color/brown"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/noDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لا"
+            android:background="@color/brown"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

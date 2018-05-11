@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/main_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="يرجـي العلم أن الصيدليـة الخاصـة بك فارغة لإضافة دواء مـن الأدوية التالية قم بتحديدها ثم إدخال السـعر الخاص بكل دواء تختاره."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_marginTop="20dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="70dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تأكيـد"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/brown"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <include
+        layout="@layout/prog_bar"/>
+</RelativeLayout>

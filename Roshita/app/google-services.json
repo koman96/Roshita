@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "668856632447",
+    "firebase_url": "https://roshita-198517.firebaseio.com",
+    "project_id": "roshita-198517",
+    "storage_bucket": "roshita-198517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668856632447:android:43fb113bf9667a5a",
+        "android_client_info": {
+          "package_name": "com.example.mohamed.roshita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668856632447-b6objq1t67v17mdu8tautgnrr8huog2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mohamed.roshita",
+            "certificate_hash": "f02320fed14d68fdff1a413b5f65d8818980023b"
+          }
+        },
+        {
+          "client_id": "668856632447-r7c20mlsrka6120dtj0p3ip18an7gl5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hKTxzk-UiKL8EhTYUXKT33EHA0mI_Bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668856632447-r7c20mlsrka6120dtj0p3ip18an7gl5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

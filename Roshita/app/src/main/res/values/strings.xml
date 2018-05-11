@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Roshita</string>
+    <string name="title_activity_client2">Client2Activity</string>
+    <string name="newUser"></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_client3_">Client3_Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_seller_map">تـحـديـد عـنـوان الـصـيـدلـيـة</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_client_select_map">Map</string>
+    <string name="title_activity_result_pharm_location">مكان الصيـدلية</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.roshita.Seller7Activity"
+    android:background="@color/brown"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/logo"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="إسم الصـيدلـية :"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <EditText
+                        android:id="@+id/pharmName1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="رقم الهـاتـف :"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <EditText
+                        android:id="@+id/pharmPhone1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/homeDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="تـوصـيـل للـمـنـازل"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+                <Button
+                    android:id="@+id/confirmBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تـغـيـيـر"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown"
+                    android:textSize="17dp"
+                    android:layout_marginTop="25dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/side_bar"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
